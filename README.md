@@ -1,4 +1,4 @@
-## Agenda Telefônica - Python3
+## Agenda Telefônica 
 
 **Disciplina:** Algoritmos e Programação de Computadores - APC  
 **Instituição:** Universidade Federal de Alagoas - Campus Arapiraca  
