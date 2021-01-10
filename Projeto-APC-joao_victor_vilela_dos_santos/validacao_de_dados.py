@@ -25,6 +25,7 @@ def validar_nome(msg):
     nome = ''
     while True:
         entrada = str(input(msg))
+        # verifica se não é um número e se não está vazio
         if not entrada.isnumeric() and entrada.strip() != '':
             nome = entrada
             tudo_certo = True
@@ -41,6 +42,7 @@ def validar_numero(msg):
     numero = 0
     while True:
         entrada = str(input(msg)).strip()
+        # verifica se é um número e se não está vazio
         if entrada.isnumeric() and entrada.strip() != '':
             numero = int(entrada)
             tudo_certo = True
@@ -57,6 +59,7 @@ def validar_email(msg):
     email = ''
     while True:
         entrada = str(input(msg))
+        # verifica se não está vazio
         if entrada.strip() != '':
             email = entrada
             tudo_certo = True
