@@ -10,7 +10,7 @@ def existeNome(lista_contato,nome):
     # primeiro eu verifico se a o tamanho da lista é maior que zero 
     # (se existe contatos cadastrados)
     if len(lista_contato) > 0:
-        # se a condição for satisfeite eu percorro o dicionário e 
+        # se a condição for satisfeita eu percorro o dicionário e 
         # verifico a chave nome se existe o nome
         for contato in lista_contato:
             if contato['Nome'] == nome:
@@ -71,7 +71,7 @@ def AlterarContato(lista_contato):
     if len(lista_contato) > 0:
         nome = validar_nome('Nome: ')
         if existeNome(lista_contato,nome):
-            # percorro a lista e exibo as info do contato e em seguida peço o novo email e número
+            # percorro a lista e exibo as informações do contato e em seguida peço o novo email e número
             for i,v in enumerate(lista_contato):
                 if v['Nome'] == nome:
                     print(f'ID: {i+1}')
@@ -96,7 +96,7 @@ def LocalizarContato(lista_contato):
                     print(f'ID: {i+1}')
                     print(f'\tNome: {v["Nome"].title()}\n\tE-mail: {v["E-mail"]}\n\tCell: {v["Tel"]}')
         else:
-            # se não tiver o contato com esse nome
+            # se não tiver o contato com esse nome 
             print('Não existe contatos com esse nome!')
     else:
         # se o taamnho for igual a 0
@@ -115,7 +115,7 @@ def ListarContato(lista_contato):
         print(f'Não existe contatos cadastrados!')
 
 
-# essa função escreve os contatos no bloco de notas
+# essa função escreve os contatos no arquivo de texto
 def escrever_no_arq():
     # essa parte é padrão, defino o nome e método
     arquivo = open('Lista_de_Contatos.txt','w')
