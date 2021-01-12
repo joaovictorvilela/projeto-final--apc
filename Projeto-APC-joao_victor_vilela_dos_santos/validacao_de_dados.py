@@ -1,7 +1,7 @@
-# funçõs que irão garantir que o usuário irá digirtar um valor válido para o
-#  programa, todas elas irão ter um parâmetro mensagem que será a mensgem 
-# exibida  em cada caso, a diferença delas é basicamente a lógica de
-#  verificação que será diferente em cada caso
+# funções que irão garantir que o usuário irá digitar um valor válido para o
+# programa, todas elas irão ter um parâmetro mensagem que será a mensgem 
+# exibida  em cada caso, a diferença delas é basicamente a lógica usada para
+# verificação que será diferente em cada caso
 
 def validar_entrada(msg):
     tudo_certo = False
